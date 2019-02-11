@@ -6,10 +6,12 @@
 
 products = %w(Producto1 Producto2 Producto3 Producto4)
 prices = %w[1000 2000 1500 950]
+list = [products, prices]
 
 html = ''
-products.each do |i|
+list[0].lenth.times do |i|
   html += "<div class='product'>"
+  html += "<p> #{list[0][i]} </p><p> #{list[1][i]} </p>"
   html += "</div>\n"
 end
 

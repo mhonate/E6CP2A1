@@ -6,3 +6,15 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+
+
+print "#{a + b}\n"
+
+print "#{a | b}\n"
+
+print "#{a & b}\n"
+
+compuesto = []
+a.length.times { |i| compuesto.push([a[i], b[i]]) }
+print "#{compuesto}\n"
